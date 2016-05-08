@@ -1,0 +1,13 @@
+ls - List Files in a directory
+cd - Change Directory
+
+Creating Repositry: Click on + icon www.github.com
+Give it a description such as Coursera Test Repositry
+Enable "Initialize this reposirty with a README". Click on create repositry. This will host our website work.
+Click on settings --> Under GitHub Pages click on "Launch automatic page generator". Click public page.
+Project will be created on http://anusoni.github.io/coursera-test
+
+
+
+
+Browser Sync:  browser-sync start --server --directory --files "x"
