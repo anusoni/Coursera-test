@@ -1,3 +1,5 @@
+Go to GitHub.com and logon (Canada12! as1979@gmail.com)
+
 ls - List Files in a directory
 cd - Change Directory
 
@@ -5,9 +7,70 @@ Creating Repositry: Click on + icon www.github.com
 Give it a description such as Coursera Test Repositry
 Enable "Initialize this reposirty with a README". Click on create repositry. This will host our website work.
 Click on settings --> Under GitHub Pages click on "Launch automatic page generator". Click public page.
-Project will be created on http://anusoni.github.io/coursera-test
+Project will be created on http://anusoni.github.io/coursera-test. This page can be viewed under Settings --> GitHub Pages.
+Change branch from master to gh-pages. This will show the website that was created for us. 
+Always use gh-pages and commit everything there.
+Create a sub-folder called "site" on your local drive (c:/users/spider/coursera-test/site).
+
+Step 1: Copy from Gitpages to local.
+Start Gitshell, change directory to c:\Users\spider and type git clone https://github.com/anusoni/Coursera_Test_AS.git
+
+git checkout gh-pages
+git status 
+
+mkdir site 
+cd site
+
+All files should be created in site folder.
+
+git status
+
+go back one directory (c:\Users\Spider\Coursera-test)
+git status
+
+Mark something for committing: git add .
+git status
+This will show the files ready for commit:
+
+To commit: git commit -m "My first page"
+
+Push: git push (Add - Commit - Push)
+
+To confirm GitHub has been updated, go to http://anusoni.github.io/Coursera-test/site/index.html and confirm page is there..
+
+If you make any changes to index.html on your local directory...to update github
+
+git status (will show one modified page)
+
+git add site/index.html or git add . (will show mark to be committed)
+
+git commit -m "Small addition to our page content"
+
+git status
+
+git push (to publish our changes) --- http://anusoni.github.io/Coursera-test/site/index.html will show updated page.
 
 
+Git Pull
+
+Make changes to your webpage online (GitHub)
+
+Click on Commit changes (You can either use the same branch or create a new branch (new branch if different user is editing it).
+
+cd to working site (c:\Users\spider\coursra-test\site)
+
+Type git commit -m "My message" (Message could be anything)
+
+git stash
+
+git pull
+
+Confirm updated file
+
+ESC: WQ if you ever accidentally send a commit command without message
+
+
+Change directory to c:\Users\Spider\coursera-test\site
 
 
 Browser Sync:  browser-sync start --server --directory --files "x"
