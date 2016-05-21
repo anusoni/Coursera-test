@@ -1,0 +1,148 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: helvetica;
+}
+
+body {
+	width: 90%;
+	margin: auto;
+}
+
+#header {
+	font-size: 175%;
+	text-align: center;
+	margin: 5% 0 5% 0;
+}
+
+#container {
+	position: relative;
+	width: 100%;
+}
+
+#ChickenBox, #BeefBox, #SushiBox {
+	position: relative;
+	border: 1px black solid;
+}
+
+
+#chicken, #beef, #sushi {
+	position: absolute;
+	right: 0%; 
+	background-color: #BB826C;
+	width: 30%;
+	text-align: center;
+	border-bottom: 1px black solid;
+	border-left: 1px black solid;
+
+}
+
+#beef {
+	background-color: #BDB76B;
+}
+
+#sushi {
+	 background-color: #A2CD5A;
+}
+
+p {
+	padding: 25px;
+}
+
+#footer {
+	clear:both;
+	margin-top: 5%;
+	background-color: #C1CDC1;
+	height: 20px;
+	width: 100%;
+	border: 1px black solid;
+}
+
+@media (min-width: 992px) {
+
+#ChickenBox {
+	float: left;
+	background-color: #C1CDC1;
+	width: 29.33%;
+	margin-left: 2%;	
+	margin-bottom: 5%;
+}
+
+#BeefBox {
+	float: left;
+	background-color: #C1CDC1;
+	width: 29.33%;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-bottom: 5%;
+}	
+
+#SushiBox {
+	float: left;
+	background-color: #C1CDC1;
+	width: 29.33%;
+	margin-right: 2%;
+	margin-bottom: 5%;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+#ChickenBox {
+	float: left;
+	background-color: #C1CDC1;
+	width: 46%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 5%;
+}
+
+
+#BeefBox {
+	float: left;
+	background-color: #C1CDC1;
+	width: 46%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 5%;
+}	
+
+#SushiBox {
+	float: left;
+	background-color: #C1CDC1;
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 5%;
+}
+}
+
+@media (max-width: 767px) {
+
+#ChickenBox {
+	background-color: #C1CDC1;
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+}
+
+#BeefBox {
+	background-color: #C1CDC1;
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+}
+
+#SushiBox {
+	background-color: #C1CDC1;
+	width: 96%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+}
+}
+
